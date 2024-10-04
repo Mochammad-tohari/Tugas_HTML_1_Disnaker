@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pendaftaran Siswa</title>
+  </head>
+  <body>
+    <nav>
+      <a href="Home_Page.html">Home</a> | <a href="Gallery.html">Gallery</a> |
+      <a href="Data_Penjualan.html">Data Penjualan</a> |
+      <a href="Daftar_Menu.html">Daftar Menu</a> |
+    </nav>
+
+    <section>
+      <h1>Formulir Pendaftaran Siswa</h1>
+      <form action="#">
+        <!--  <input
+            type="text"> memberikan inputan bertipe text -->
+        <div>
+          <label for="Nama_Calon_Siswa">Nama Calon Siswa :</label>
+          <input
+            type="text"
+            id="Nama_Calon_Siswa"
+            name="Nama_Calon_Siswa"
+            placeholder=""
+          />
+        </div>
+        <br />
+
+        <div>
+          <label for="TTL">Tempat/Tanggal Lahir :</label>
+          <input type="date" id="TTL" name="TTL" placeholder="" />
+        </div>
+        <br />
+
+        <div>
+          <label for="Agama">Agama :</label>
+          <select name="Agama" id="Agama">
+            <option value="Islam">Islam</option>
+            <option value="Kristen Protestan">Kristen Protestan</option>
+            <option value="Kristen Katolik">Kristen Katolik</option>
+            <option value="Hindu">Hindu</option>
+            <option value="Budha">Budha</option>
+            <option value="Konghuchu">Konghuchu</option>
+          </select>
+        </div>
+        <br />
+
+        <div>
+          <label for="Alamat"> Alamat :</label>
+          <textarea name="Alamat" id="Alamat"></textarea>
+        </div>
+        <br />
+
+        <div>
+          <label for="No_Telpon">No.Telp/Hp :</label>
+          <input type="text" id="No_Telpon" name="No_Telpon" placeholder="" />
+        </div>
+        <br />
+
+        <!--  <input
+                type="radio"> memberikan inputan bertipe radio yang harus di isi salah satu-->
+        <div>
+          <label for="Gender">Jenis Kelamin :</label>
+          <input
+            type="radio"
+            id="GenderPria"
+            name="Gender"
+            value="Pria"
+            checked
+          />
+          Pria
+          <input type="radio" id="GenderWanita" name="Gender" value="Wanita" />
+          Wanita
+        </div>
+        <br />
+
+        <!--  <input
+                type="checkbox"> memberikan inputan bertipe checkbox yang bisa diisi keduanya-->
+        <div>
+          <label for="Ekstrakulikuler">Ekstrakulikuler :</label>
+
+          <label for="">
+            <input type="checkbox" name="Paskibra" value="Paskibra" />
+            Paskibra
+          </label>
+
+          <label for="">
+            <input type="checkbox" name="Futsal" value="Futsal" />
+            Futsal
+          </label>
+
+          <label for="">
+            <input type="checkbox" name="Basket" value="Basket" />
+            Basket
+          </label>
+
+          <label for="">
+            <input type="checkbox" name="Renang" value="Renang" />
+            Renang
+          </label>
+
+          <label for="">
+            <input type="checkbox" name="Tari" value="Tari" />
+            Tari
+          </label>
+        </div>
+        <br />
+
+        <div>
+          <label for="Pas_Foto">Pas Foto :</label>
+          <input type="file" name="Pas_Foto" id="Pas_Foto" />
+        </div>
+
+        <div>
+          <button type="submit">Kirim</button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
